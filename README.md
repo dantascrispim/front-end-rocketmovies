@@ -1,6 +1,6 @@
 ## RocketMovies 
 
-App desenvolvido par listar seus vídeos favoritos...
+App desenvolvido para listar seus filmes favoritos...
 
 ## Foto do Projeto
 
