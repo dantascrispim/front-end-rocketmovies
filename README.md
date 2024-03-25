@@ -7,7 +7,7 @@ App desenvolvido par listar seus vídeos favoritos...
 ![capa rocketmovie](https://github.com/dantascrispim/rocketmovies/assets/114705745/948c3311-0f17-4882-a090-bdb7daf4dba1)
 
 ## Tecnologias Usadas
-  JAVASCRIPT, REACT JS, STYLED-COMPONENTS, FIGMA, GIT E GITHUB.
+  VITE, JAVASCRIPT, REACT JS, STYLED-COMPONENTS, FIGMA, GIT E GITHUB.
 
 ## Funcionalidades
   Esse app foi desenvolvido para listar seus filmes favoritos.
