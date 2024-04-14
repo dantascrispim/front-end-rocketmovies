@@ -11,10 +11,13 @@ export const Container = styled.div `
         color: ${({ theme}) => theme.COLORS.LIMON};
         font-size: 43px;
     }
+    
      h2 {
         color: ${({ theme}) => theme.COLORS.WHITE};
         font-size: 24px;
         margin: 48px 0;
+       
+        
         
     }
 
@@ -27,6 +30,11 @@ export const Container = styled.div `
         text-decoration: none;
         color: ${({ theme}) => theme.COLORS.LIMON};
         margin-top: 60px;
+        align-items: center;
+        font-size: 16px;
+        
+        display: flex;
+        gap: 10px;
     }
 `;
 
@@ -39,6 +47,7 @@ export const Form = styled.form `
     align-items: center;
 
     text-align: center;
+   
 `;
 
 export const Background = styled.div `
