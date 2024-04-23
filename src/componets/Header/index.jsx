@@ -1,28 +1,54 @@
 
+import { Container, Profile, Place, Logout } from "./styles";
+import { RiShutDownLine} from "react-icons/ri";
 import { Input } from "../../componets/Input";
-import { Container, Profile, Place } from "./styles";
+import { useAuth } from "../../hooks/auth";
 import { FiSearch } from "react-icons/fi";
+import { api } from "../../services/api";
+
 
 export function Header() {
+
+    const { signOut, user } = useAuth()
+
+    const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder;
+
+
     return (
-        <Container>
-            <h2>
-                RocketMovies
-            </h2>
+        <Container  >
+            
+                
+            <Profile to = {"/profile"} >
+                <img 
+                    src= { avatarUrl } 
+                    alt={ user.name } 
+                />
+                <div>
+                    <strong>{ user.name }</strong>
+                    <span >
+                        sair
+                    </span>
+            
+                </div>
+
+            </Profile>
+            
+            
             <Place>
                 <Input placeholder = "Pesquisar pelo Título" icon={ FiSearch }/>
             </Place>
-            <Profile to = {"/profile"}>
-                
-                <div>
-                    <strong>Dantas Crispim</strong>
-                    <span>
-                        sair
-                    </span>
-                </div>
-            <img src="https://github.com/dantascrispim.png" alt="foto perfil do github" />
 
-            </Profile>
+            
+                    
+                    <h2  >
+                        RocketMovies
+                    </h2>
+
+                
+            
+                <Logout to = {"/"} onClick = { signOut }>
+                    <RiShutDownLine />
+                 </Logout>
         </Container>
     )
 }

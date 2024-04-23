@@ -20,18 +20,19 @@ export const Container = styled. div `
     h2 {
         color: ${({ theme}) => theme.COLORS.LIMON};
         font-size: 24px;
-    
+        
     }
-
     
   
     
 `;
 
+
+
 export const Profile = styled(Link) `
     display: flex;
     align-items: center;
-     
+     gap: 25px;
 
     > img {
         width: 56px;
@@ -51,7 +52,7 @@ export const Profile = styled(Link) `
      span {
         font-size: 14px;
         color: ${({ theme}) => theme.COLORS.GRAY_100};
-        text-align: right;
+        text-align: left;
        
        
      }
@@ -74,3 +75,17 @@ export const Place = styled.div `
         color: ${({ theme}) => theme.COLORS.WHITE};
     }
 `;
+
+export const Logout = styled.button `
+
+    border: none;
+    background: none;
+    align-items: center;
+
+    >svg {
+        color:  ${({ theme }) => theme.COLORS.LIMON} ;
+        font-size: 30px;
+        cursor: pointer;
+    }
+
+`
