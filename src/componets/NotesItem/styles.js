@@ -4,10 +4,10 @@
       display: flex;
       align-items: center;
 
-      background-color: ${({ theme, isNew}) => isNew ? "trasparent" : theme.COLORS.BACKGROUND_900} ;
+      background-color: ${({ theme, isNew}) => isNew ? "trasparent" : theme.COLORS.BACKGROUND_800} ;
       color: ${({ theme }) => theme.COLORS.GRAY_300};
 
-      border: ${({ theme, isNew }) => isNew ? `2px dashed ${ theme.COLORS.GRAY_300}` : 'none'};
+      border: ${({ theme, $isNew }) => $isNew ? `2px dashed ${ theme.COLORS.GRAY_300}` : 'none'};
 
       margin: 10px 8px;
       border-radius: 10px;

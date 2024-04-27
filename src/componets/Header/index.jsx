@@ -5,6 +5,7 @@ import { Input } from "../../componets/Input";
 import { useAuth } from "../../hooks/auth";
 import { FiSearch } from "react-icons/fi";
 import { api } from "../../services/api";
+import avatarPlaceholder from "../../assets/avatar_placeholder.svg";
 
 
 export function Header() {
