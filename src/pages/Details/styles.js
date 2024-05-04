@@ -10,8 +10,55 @@
     grid-template-areas: 
     "header"
     "div"
-    "div";
-
+    "div"
+    ;
+    
+    
  `;
+
+export const Links = styled.ul `
+list-style: none;
+
+
+> li {
+    margin-top: 12px;
+
+}
+a {
+    color: ${({theme}) => theme.COLORS.WHITE};
+    
+}
+`
+
+export const Content = styled.div `
+    max-width: 550px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-direction: column;
+
+
+    > button:first-child {
+
+        align-self: end;
+
+}
+
+    > h1 {
+        font-size: 36px;
+        font-weight: 500;
+        padding-top: 64px;
+        color: ${({theme}) => theme.COLORS.WHITE};
+    }
+
+    > p {
+        font-size: 16px;
+        margin-top: 16px;
+        text-align: justify;
+        color: ${({theme}) => theme.COLORS.WHITE};
+    }
+
+`;
+
  
  

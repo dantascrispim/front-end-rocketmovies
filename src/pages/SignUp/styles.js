@@ -28,7 +28,7 @@ export const Container = styled.div `
 
     a {
         text-decoration: none;
-        color: ${({ theme}) => theme.COLORS.LIMON};
+        color: ${({ theme}) => theme.COLORS.WHITE};
         margin-top: 60px;
         align-items: center;
         font-size: 16px;

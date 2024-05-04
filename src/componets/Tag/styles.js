@@ -9,7 +9,7 @@ export const Container = styled.span `
     border-radius: 5px;
     margin-right: 6px;
     color:  ${({ theme }) => theme.COLORS.CZ};
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_700};
+    background-color: ${({ theme }) => theme.COLORS.LIMON};
     text-align: center;
     width: 130px;
     height: 30px;

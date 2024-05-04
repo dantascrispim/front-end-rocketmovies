@@ -27,6 +27,16 @@ export const Container = styled.div `
 
         p {
             font-size: 18px;
+            color: ${({ theme }) => theme.COLORS.LIMON};
+        }
+
+        button {
+          display: flex;
+          background: none;
+          border: none;
+          font-size: 25px;
+          gap: 15px;
+          cursor: pointer;
         }
         
     }

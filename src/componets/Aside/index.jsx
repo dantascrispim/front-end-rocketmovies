@@ -10,6 +10,8 @@ export function Aside() {
                     <h2>
                     Meus filmes
                     </h2>
+
+                    
                 
                     <Add to={"/new"}>
                        <FiPlus/>
