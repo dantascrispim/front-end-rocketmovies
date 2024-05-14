@@ -8,6 +8,7 @@ import { FiSearch } from "react-icons/fi";
 import { api } from "../../services/api";
 import { useState } from "react";
 import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export function Header() {
 
@@ -17,6 +18,14 @@ export function Header() {
     const [tagsSelected, setTagsSelected] = useState([]);
     
     const { signOut, user } = useAuth()
+
+    const navigate = useNavigate();
+
+
+    function handleSignOut(){
+        navigate("/");
+        signOut();
+    }
     
     const avatarUrl = user.avatar ? `${api.defaults.baseURL}/files/${user.avatar}` : avatarPlaceholder;
     
@@ -59,7 +68,7 @@ export function Header() {
 
                 
             
-                <Logout to = {"/"} onClick = { signOut }>
+                <Logout to = {"/"} onClick = { handleSignOut }>
                     <RiShutDownLine />
                  </Logout>
         </Container>
